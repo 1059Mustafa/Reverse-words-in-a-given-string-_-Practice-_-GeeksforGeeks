@@ -1,0 +1,15 @@
+string reverseWords(string S) 
+    { 
+        reverse(S.begin(),S.end());
+        for(int i=0;i<S.size();i++)
+        {
+            int j=i;
+            while(S[i]!='.'&&i<S.size())
+            {
+                i++;
+            }
+            /////concept
+            reverse(S.begin()+j,S.begin()+i);
+        }
+        return S;
+    } 
